@@ -10,10 +10,11 @@
     <script type="text/javascript" src="palindromeController.js"></script>
 </head>
 
+<!-- TODO : Refactor to angular -->
 <body>
- <div>
-    <h1> Palindrome App</h1>
-    <p>{{1 + 1}}</p>
- </div>
+     <form action = "http://127.0.0.1:8081/check_palindrome" method = "POST">
+         Palindrome :  <input type = "text" name = "palindrome"> <br>
+         <input type = "submit" value = "Submit">
+     </form>
 </body>
 </html>
