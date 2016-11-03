@@ -1,7 +1,5 @@
-(function () {
-    var app = angular.module('Palindrome', []);
-
-    app.controller('PalindromeController', ['$scope', '$http', '$httpParamSerializerJQLike'
+angular.module('Palindrome', [])
+    .controller('PalindromeController', ['$scope', '$http', '$httpParamSerializerJQLike'
         , function (scope, http, httpParamSerializerJQLike) {
             scope.result = "Result";
 
@@ -29,9 +27,4 @@
             });
         };
 
-        scope.button = function() {
-            console.log("Button");
-        };
-
     }]);
-})();
